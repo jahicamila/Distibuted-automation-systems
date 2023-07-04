@@ -7,3 +7,9 @@ The user moves the slider to adjust the brightness value. The slider can have a 
 The server (ESP) receives the number of sliders and the corresponding value and adjusts the PWM duty cycle accordingly. In addition, it also informs all other clients of the new current slider values.
 
 To transfer the HTML, CSS and JavaScript files needed to build this project to the ESP8266 flash memory (LittleFS), the VS Code plugin with the extension PlatformIO: LittleFS Filesystem uploade (upload files to the filesystem) was used.
+
+The following files are used to build the web server:
+• Arduino sketch that handles the web server;
+• index.html: to define the content of the website;
+• sytle.css: for styling the website;
+• script.js: for programming the website's behavior - handling what happens when the slider is moved, sending, receiving and interpreting messages received via the WebSocket protocol.
